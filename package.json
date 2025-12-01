@@ -1,0 +1,10 @@
+{
+    "name": "advent-of-code-2025",
+    "version": "1.0.0",
+    "description": "Advent of Code 2025 Problems and Solutions",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "day": "node day$npm_config_day/day$npm_config_day.js"
+    }
+}
