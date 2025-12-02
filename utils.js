@@ -4,10 +4,10 @@ export function parseInput(path) {
     return fs.readFileSync(path, "utf8");
 }
 
-export function parseToLines(path) {
-    return parseInput(path).split("\n");
+export function parseToLines(path, separator = "\n") {
+    return parseInput(path).split(separator);
 }
 
-export function parseToGrid(path) {
-    return parseToLines(path).map((line) => line.split(""));
+export function parseToGrid(path, separator = "\n", lineSeparator = "") {
+    return parseToLines(path, separator).map((line) => line.split(lineSeparator));
 }

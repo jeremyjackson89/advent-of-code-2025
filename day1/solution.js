@@ -1,5 +1,3 @@
-// I left this file here because I linked to it via BlueSky
-// and Mastodon before changing the filenames to solution.js
 import { parseToLines } from "../utils.js";
 
 const maxPositions = 100;
