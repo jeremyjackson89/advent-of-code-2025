@@ -11,3 +11,7 @@ export function parseToLines(path, separator = "\n") {
 export function parseToGrid(path, separator = "\n", lineSeparator = "") {
     return parseToLines(path, separator).map((line) => line.split(lineSeparator));
 }
+
+export function parseToNumberGrid(path, separator = "\n", lineSeparator = "") {
+    return parseToLines(path, separator).map((line) => line.split(lineSeparator).map(Number));
+}
