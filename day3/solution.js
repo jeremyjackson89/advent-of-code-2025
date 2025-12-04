@@ -42,5 +42,6 @@ function getJoltage(batteriesNeeded) {
     return joltage;
 }
 
-console.log("part 1:", getJoltage(2));
+// console.log("part 1:", getJoltage(2));
 console.log("part 2:", getJoltage(12));
+
