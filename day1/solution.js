@@ -37,9 +37,9 @@ function part2() {
     for (const rotation of rotations) {
         direction = rotation[0] == "L" ? -1 : 1;
         turns = parseInt(rotation.substring(1));
-        
+
         lastDialPosition = dialPosition;
-        fullRotations = Math.floor(turns / 100)
+        fullRotations = Math.floor(turns / 100);
 
         dialPosition = dialPosition + (direction * (turns % maxPositions));
 
